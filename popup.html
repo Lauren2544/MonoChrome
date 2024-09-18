@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MonoChrome</title>
+  <script src="popup.js"></script>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+      width: 400px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      padding-left: 10px;
+      margin: 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .input-container {
+      position: relative;
+      width: 80%;
+      padding-top:20px;
+      max-width: 300px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #007bff;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .button1 {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button2 {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .char-count {
+      position: absolute;
+      right: -10px;
+      bottom: 30px;
+      font-size: 14px;
+      color: black;
+      border: 1px solid black;
+      background-color: white;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <h1>Welcome to</h1>
+  <h1>MonoChrome</h1>
+  <br>
+  <p>
+    Break free from the endless scroll. 
+  </p>
+  <p> After spending time on various platforms, 
+    the extension applies a grayscale filter, 
+    making the experience less visually stimulating and distracting.
+  </p>
+  <button id="set" class="button2">Turn on Filter</button>
+  <p>
+    To reset the filter, please enter a reason for doing so in the text box below. 
+    If your reason is valid and meets the required length, the reset button will appear. 
+    This helps ensure that the reset action is intentional and purposeful.
+  </p>
+  <div class="input-container" id="input">
+    <input type="text" id="intentionInput" placeholder="Enter your intention...">
+    <div id="charCount" class="char-count">0 characters</div>
+  </div>
+  <p id="feedbackMessage"></p>
+  <button id="reset" class="button1">Reset Filter</button>
+  <br>
+</body>
+</html>
+

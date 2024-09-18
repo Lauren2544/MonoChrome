@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "MonoChrome",
+    "version": "1.0",
+    "description": "A chrome extension that applies a monochrome filter after you've engaged with content for a certain amount of time to help you focus by making it less appealing, encouraging you to spend less time online.",
+    "permissions": ["tabs", "activeTab", "storage", "scripting"],
+    "host_permissions": [
+      "*://*.youtube.com/*", "*://*.linkedin.com/*", "*://*.instagram.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*", "*://*.instagram.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png"
+      }
+    }
+}  
