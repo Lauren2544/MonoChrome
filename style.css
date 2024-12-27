@@ -1,0 +1,107 @@
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-message{
+    flex-grow: 1
+}
+
+#intention-input::placeholder {
+    color: lightgrey; /* Change placeholder text color to white */
+  }
+  
+
+.input-container {
+  position: relative;
+  width: 80%;
+  padding-top: 5px;
+  max-width: 300px;
+  color: white;
+
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-image: url("colour.png"); 
+  background-color: rgba(0, 0, 0, 0.4); 
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s;
+}
+
+.colour-button {
+  background-image: url("colour.png");
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent color overlay */
+  background-blend-mode: overlay; /* Blend the color overlay with the image */
+  background-size: cover;
+  background-position: center;
+}
+
+.grey-button {
+  background-image: url("grey.png");
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent color overlay */
+  background-blend-mode: overlay; /* Blend the color overlay with the image */
+  background-size: cover;
+  background-position: center;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent color overlay */
+}
+
+#apply-grey-container,
+#remove-grey-container {
+  display: grid;
+  place-items: center;
+}
+
+.char-count {
+  position: absolute;
+  right: -10px;
+  bottom: 30px;
+  font-size: 14px;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
