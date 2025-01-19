@@ -1,8 +1,8 @@
 # MonoChrome # 
 
-Welcome to **MonoChrome**, a chrome extension that applies a monochrome filter after you’ve engaged with content for a certain amount of time to help you focus by making it less appealing, encouraging you to spend less time online.
+Welcome to **MonoChrome**, a chrome extension that applies a greyscale filter on certain websites to make them less appealing, encouraging you to spend more time offline.
 
 ## Key Features
 
-- **Automatic Activation:** Automatically applies the monochrome filter after you’ve engaged with content for a certain amount of time on supported websites like YouTube and Instagram.
-- **Monochrome Transformation:** Applies a grayscale filter across websites, reducing visual noise and helping you concentrate.
+- **Automatic Activation:** Automatically applies the greyscale filter on specific websites. 
+- **Monochrome Transformation:** Ability to toggle a grayscale filter on/off across any website at anytime, reducing visual noise and simulation.
