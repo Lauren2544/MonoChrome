@@ -8,10 +8,10 @@
       "*://*.youtube.com/*", "*://*.linkedin.com/*", "*://*.instagram.com/*", "*://*.tiktok.com/*"
     ],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "src/scripts/background.js"
     },
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "src/html/popup.html",
       "default_icon": {
         "16": "images/icon.png"
       }

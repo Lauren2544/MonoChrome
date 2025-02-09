@@ -1,7 +1,7 @@
 let specialDomains;
 
 // list of special domains, the list in special_domains.json should be same as host_permissions list in mainfest.json
-fetch(chrome.runtime.getURL('special_domains.json'))
+fetch(chrome.runtime.getURL('../../config/special_domains.json'))
 .then(response => response.json())
 .then(data => { specialDomains = data.specialDomains; })
 .catch(error => console.error("Error loading allowed domains:", error));
