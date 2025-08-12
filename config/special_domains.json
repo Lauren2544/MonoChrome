@@ -1,8 +1,11 @@
 {
     "specialDomains": [
       "youtube.com",
+      "facebook.com",
+      "x.com",
       "linkedin.com",
       "instagram.com", 
-      "tiktok.com"
+      "tiktok.com", 
+      "pinterest.com"
     ]
   }

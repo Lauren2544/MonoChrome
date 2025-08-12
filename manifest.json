@@ -2,10 +2,10 @@
     "manifest_version": 3,
     "name": "MonoChrome",
     "version": "1.0",
-    "description": "A chrome extension that applies a monochrome filter after you've engaged with content for a certain amount of time to help you focus by making it less appealing, encouraging you to spend less time online.",
-    "permissions": ["tabs", "activeTab", "storage", "scripting"],
+    "description": "A chrome extension that applies greyscale filters on websites making them less appealing, encouraging you to spend less time online.",
+    "permissions": ["tabs", "activeTab", "scripting"],
     "host_permissions": [
-      "*://*.youtube.com/*", "*://*.linkedin.com/*", "*://*.instagram.com/*", "*://*.tiktok.com/*"
+      "*://*.youtube.com/*", "*://*.facebook.com/*", "*://*.x.com/*", "*://*.linkedin.com/*", "*://*.instagram.com/*", "*://*.tiktok.com/*", "*://*.pinterest.com/*"
     ],
     "background": {
       "service_worker": "src/scripts/background.js"
