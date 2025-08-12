@@ -4,8 +4,6 @@ Welcome to **MonoChrome**, a chrome extension that applies a greyscale filter on
 
 ## Key Features
 
--- FEATURES --
-
 * Automatic Activation: Automatically applies the greyscale filter on specific websites (youtube, facebook, x, linkedin, instagram, tiktok, pinterest) 
 
 * Greyscale Transformation: Ability to toggle a greyscale filter on/off across any website at anytime, reducing visual noise and simulation. To toggle off the grayscale filter you need to set an intention of minimum length 20 characters and containing at least one of the required words ("i am", "im", "i'm", "i want", "i just want")
